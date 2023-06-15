@@ -1,10 +1,10 @@
 server:
   port: 8888
 spring:
-  application:
-    name: config-server
+  profiles:
+    active: native
   cloud:
     config:
       server:
-        git:
-          uri: file://D:\java\workspace\spring-cloud\config-server\src\main\resources\config
+        native:
+          search-locations: D:\java\workspace\spring-cloud\config-server\src\main\resources\config
